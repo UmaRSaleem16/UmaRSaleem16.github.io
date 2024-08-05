@@ -248,6 +248,8 @@
     }
 
     .entry-item {
+      display: flex;
+      flex-direction: column;
       margin-bottom: .5rem;
     }
 
@@ -258,6 +260,7 @@
       display: block;
       margin-bottom: .5rem;
       color: #222222;
+      order: 1;
     }
 
     .entry-item input {
@@ -267,11 +270,20 @@
       border: 1px solid #d1d5db;
       display: block;
       height: 3rem;
+      order: 2;
     }
 
     .entry-item input:focus {
       border: 1px solid #3b82f6;
       outline: none;
+    }
+
+    .entry .entry-item .error {
+      font-size: .75rem;
+      line-height: 1.25rem;
+      margin-top: .25rem;
+      color: #ff0000ba;
+      order: 3;
     }
 
     a#forgotPassword {
